@@ -1,0 +1,50 @@
+# ==== RUN / CORE ====
+random_seed: 42
+max_steps: 4000
+dt: 0.1                 # step time (s)
+log_every: 50
+
+# ==== AGENTS / GRAPH ====
+n_agents: 120
+attention_budget: 4   # quante proposte può fare un agente in un step
+graph:
+  type: small_world     # small_world 
+  k: 6
+  p: 0.25
+poisson_rate:
+  lambda_base: 0.2    # proattività media per agente 0.1 per llm disabilitato
+
+# ==== SONGS / DATASET ====
+song_source: kaggle_csv
+song_csv_path: "dataset.csv"        
+features_used:
+  - danceability
+  - energy
+  - valence
+  - acousticness
+  - instrumentalness
+  - speechiness
+  - liveness
+  - tempo_norm
+  - loudness_norm
+sample:
+  n_songs: 400
+  by_popularity_quantile: 0.5       # prendo la metà più popolari
+filters:
+  exclude_explicit: false
+
+# ==== EXPERIMENT FLAGS ====
+topk_candidates: 5
+sequential: false        # così è asincrono
+
+# ==== LLM POLICY ====
+llm:
+  enabled: true
+  backend: "ollama"      # "ollama" (locale) | "litellm"
+  model: "llama3.2:1b"           # ollama: "phi", "phi3", ecc. ; litellm: "phi-2", "llama3.2:1b"
+  temperature: 0.0
+  max_output_tokens: 128
+  # solo se backend=ollama
+  endpoint: "http://localhost:11434"
+  # solo se backend=litellm (usa env var LITELLM_API_KEY + LITELLM_PROVIDER_CONFIG)
+

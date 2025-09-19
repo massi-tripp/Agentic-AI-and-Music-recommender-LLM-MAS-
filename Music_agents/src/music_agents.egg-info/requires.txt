@@ -1,0 +1,16 @@
+pydantic>=2
+numpy
+pandas
+networkx
+matplotlib
+pyyaml
+requests
+
+[dev]
+pytest
+pytest-asyncio
+ruff
+black
+
+[llm]
+litellm>=1.41.0

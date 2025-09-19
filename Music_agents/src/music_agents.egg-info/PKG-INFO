@@ -1,0 +1,188 @@
+Metadata-Version: 2.4
+Name: music-agents
+Version: 0.1.0
+Summary: JamClub-Agentic: LLM agentic multi-agent music recommender
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Provides-Extra: llm
+Requires-Dist: litellm>=1.41.0; extra == "llm"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
+Cos’è adopted
+
+Quel numero è la somma delle adozioni registrate in memoria: ad ogni apply_adoption(...) aggiungo il song_id in env.history[receiver]. Nel banner stampo:
+adopted = sum(len(h) for h in env.history.values())
+Se resta 0, significa che nessun PROPOSE è stato elaborato con esito positivo (più probabilmente: gli agenti stanno crashando durante la policy e quindi non spediscono proprio messaggi).
+
+ $py = @"
+>> import json, pathlib
+>> p = sorted(pathlib.Path('runs').rglob('messages.jsonl'))[-1]
+>> prop=adopt=err=0
+>> for ln in open(p,'rb'):
+>>     rec=json.loads(ln)
+>>     t=rec.get('type')
+>>     if t=='PROPOSE': prop+=1
+>>     elif t=='ADOPT': adopt+=1
+>>     elif t=='ERROR': err+=1
+>> print(f'LOG: {p} | PROPOSE: {prop} | ADOPT: {adopt} | ERRORS: {err}')
+>> "@
+>> python -c $py
+>>
+
+Primo test con LLM disabled, (adoption_prob= max(0.0, min(1.0, 0.2 + 0.6*sim + 0.2*t)))
+parametri:
+# ==== RUN / CORE ====
+random_seed: 42
+max_steps: 4000
+dt: 0.1                 # step time (s)
+log_every: 50
+
+# ==== AGENTS / GRAPH ====
+n_agents: 120
+attention_budget: 5
+graph:
+  type: small_world     # small_world | erdos | barabasi
+  k: 6
+  p: 0.1
+poisson_rate:
+  lambda_base: 0.2      # proattività media per agente
+
+Risultati :
+(.venv) PS C:\Universita\Sistemi_complessi_modelli_e_simulazione\Music_agents> python -m src.simulate                   
+Run dir: C:\Universita\Sistemi_complessi_modelli_e_simulazione\Music_agents\runs\demo-20250827-165201 | agents=120 | songs=400 | steps=4000 | dt=0.1
+[step 0/4000] adopted=0
+[step 50/4000] adopted=67
+[step 100/4000] adopted=142
+[step 150/4000] adopted=235
+[step 200/4000] adopted=307
+[step 250/4000] adopted=404
+[step 300/4000] adopted=487
+[step 350/4000] adopted=561
+[step 400/4000] adopted=645
+[step 450/4000] adopted=718
+[step 500/4000] adopted=790
+[step 550/4000] adopted=874
+[step 600/4000] adopted=954
+[step 650/4000] adopted=1041
+[step 700/4000] adopted=1139
+[step 750/4000] adopted=1217
+[step 800/4000] adopted=1290
+[step 850/4000] adopted=1390
+[step 900/4000] adopted=1470
+[step 950/4000] adopted=1550
+[step 1000/4000] adopted=1639
+[step 1050/4000] adopted=1732
+[step 1100/4000] adopted=1844
+[step 1150/4000] adopted=1926
+[step 1200/4000] adopted=2031
+[step 1250/4000] adopted=2119
+[step 1300/4000] adopted=2207
+[step 1350/4000] adopted=2301
+[step 1400/4000] adopted=2399
+[step 1450/4000] adopted=2501
+[step 1500/4000] adopted=2597
+[step 1550/4000] adopted=2670
+[step 1600/4000] adopted=2754
+[step 1650/4000] adopted=2843
+[step 1700/4000] adopted=2930
+[step 1750/4000] adopted=3021
+[step 1800/4000] adopted=3108
+[step 1850/4000] adopted=3204
+[step 1900/4000] adopted=3293
+[step 1950/4000] adopted=3403
+[step 2000/4000] adopted=3488
+[step 2050/4000] adopted=3589
+[step 2100/4000] adopted=3677
+[step 2150/4000] adopted=3791
+[step 2200/4000] adopted=3921
+[step 2250/4000] adopted=4032
+[step 2300/4000] adopted=4142
+[step 2350/4000] adopted=4239
+[step 2400/4000] adopted=4336
+[step 2450/4000] adopted=4420
+[step 2500/4000] adopted=4504
+[step 2550/4000] adopted=4607
+[step 2600/4000] adopted=4701
+[step 2650/4000] adopted=4786
+[step 2700/4000] adopted=4900
+[step 2750/4000] adopted=4999
+[step 2800/4000] adopted=5104
+[step 2850/4000] adopted=5175
+[step 2900/4000] adopted=5273
+[step 2950/4000] adopted=5362
+[step 3000/4000] adopted=5460
+[step 3050/4000] adopted=5548
+[step 3100/4000] adopted=5638
+[step 3150/4000] adopted=5766
+[step 3200/4000] adopted=5880
+[step 3250/4000] adopted=5992
+[step 3300/4000] adopted=6084
+[step 3350/4000] adopted=6189
+[step 3400/4000] adopted=6265
+[step 3450/4000] adopted=6360
+[step 3500/4000] adopted=6454
+[step 3550/4000] adopted=6562
+[step 3600/4000] adopted=6670
+[step 3650/4000] adopted=6758
+[step 3700/4000] adopted=6864
+[step 3750/4000] adopted=6969
+[step 3800/4000] adopted=7066
+[step 3850/4000] adopted=7177
+[step 3900/4000] adopted=7270
+[step 3950/4000] adopted=7369
+Done.
+(.venv) PS C:\Universita\Sistemi_complessi_modelli_e_simulazione\Music_agents> $py = @"
+>> import json, pathlib
+>> p = sorted(pathlib.Path('runs').rglob('messages.jsonl'))[-1]
+>> prop=adopt=err=0
+>> for ln in open(p,'rb'):
+>>     rec=json.loads(ln)
+>>     t=rec.get('type')
+>>     if t=='PROPOSE': prop+=1
+>>     elif t=='ADOPT': adopt+=1
+>>     elif t=='ERROR': err+=1
+>> print(f'LOG: {p} | PROPOSE: {prop} | ADOPT: {adopt} | ERRORS: {err}')
+>> "@
+>> python -c $py
+>>
+LOG: runs\demo-20250827-165201\messages.jsonl | PROPOSE: 19210 | ADOPT: 7480 | ERRORS: 0
+(.venv) PS C:\Universita\Sistemi_complessi_modelli_e_simulazione\Music_agents> python -m src.quick_eval
+log: runs\demo-20250827-165201\messages.jsonl | ADOPT events: 7480
+Top-5 songs by adoption: per ogni canzone, quante adozioni ha generato.
+Top-5 songs by adoption: [(275, 215), (257, 210), (314, 194), (167, 174), (385, 168)]
+Gini (popolarità): disuguaglianza moderata. 0 = perfetta equità (tutte le canzoni adottate uguale), 1 = tutto concentrato su pochissime. 0.35 suggerisce che non è troppo skewed, quindi (se i dati fossero della run lunga) la popolarità è piuttosto diffusa.
+Gini(popularity): 0.312
+Top-5 cascades: dimensione della componente più grande del grafo di diffusione per ogni brano. Valori 3–4 sono cascate piccole ⇒ adozioni tante, ma spesso “locali” (con pochi salti); potrebbe essere dovuto a base di adozione alta (adozioni “quasi indipendenti”) o a grafi poco profondi. È un indizio utile: conviene misurare profondità media, struttural virality e R (numero riproduttivo) per capire se le canzoni si propagano “a catena” o “sparpagliato”.
+Top-5 cascades (song_id, size): [(326, 4), (134, 4), (224, 4), (118, 4), (257, 4)]
+
+Inequality: Gini + Herfindahl + punti Lorenz (se vuoi plottarli).
+
+Efficienza: tasso di accettazione complessivo e per canzone (adopt / propose).
+
+Cascade: top-5 per grandezza, profondità massima, ampiezza massima, structural virality (media delle distanze tra nodi nella “spanning tree” della cascata).
+
+R (numero riproduttivo): figli medi per adottante (out-degree medio nei grafi di adozione).
+
+Exposure: quante proposte precedono un’adozione (media, mediana, 95° percentile).
+
+---- Popularity ----
+{'total_adopts': 7480, 'unique_songs_adopted': 100, 'top5': [(275, 215), (257, 210), (314, 194), (167, 174), (385, 168)], 'gini': 0.312, 'herfindahl': 0.013, 'lorenz': [(0.0, 0.0), (0.01, 0.00026737967914438503), (0.02, 0.0008021390374331551), (0.03, 0.0022727272727272726), (0.04, 0.004411764705882353), (0.05, 0.007085561497326203), (0.06, 0.009759358288770054), (0.07, 0.01270053475935829), (0.08, 0.015775401069518715), (0.09, 0.018850267379679143), (0.1, 0.02232620320855615), (0.11, 0.026336898395721925), (0.12, 0.03048128342245989), (0.13, 0.03462566844919786), (0.14, 0.03890374331550802), (0.15, 0.04331550802139037), (0.16, 0.04772727272727273), (0.17, 0.05227272727272727), (0.18, 0.056818181818181816), (0.19, 0.06163101604278075), (0.2, 0.06684491978609626), (0.21, 0.07205882352941176), (0.22, 0.07727272727272727), (0.23, 0.08262032085561498), (0.24, 0.08796791443850267), (0.25, 0.09358288770053476), (0.26, 0.09919786096256684), (0.27, 0.10494652406417113), (0.28, 0.11082887700534759), (0.29, 0.11671122994652407), (0.3, 0.12286096256684492), (0.31, 0.12914438502673797), (0.32, 0.1358288770053476), (0.33, 0.14278074866310161), (0.34, 0.1498663101604278), (0.35, 0.156951871657754), (0.36, 0.16417112299465242), (0.37, 0.171524064171123), (0.38, 0.17901069518716578), (0.39, 0.18663101604278076), (0.4, 0.19438502673796793), (0.41, 0.2021390374331551), (0.42, 0.21016042780748664), (0.43, 0.21831550802139038), (0.44, 0.2266042780748663), (0.45, 0.23529411764705882), (0.46, 0.24411764705882352), (0.47, 0.2529411764705882), (0.48, 0.2620320855614973), (0.49, 0.2712566844919786), (0.5, 0.28048128342245987), (0.51, 0.2898395721925134), (0.52, 0.299331550802139), (0.53, 0.3089572192513369), (0.54, 0.3185828877005348), (0.55, 0.3286096256684492), (0.56, 0.3390374331550802), (0.57, 0.3498663101604278), (0.58, 0.3606951871657754), (0.59, 0.3716577540106952), (0.6, 0.382620320855615), (0.61, 0.39371657754010697), (0.62, 0.40494652406417114), (0.63, 0.4163101604278075), (0.64, 0.42780748663101603), (0.65, 0.4393048128342246), (0.66, 0.45093582887700534), (0.67, 0.4625668449197861), (0.68, 0.474331550802139), (0.69, 0.48622994652406415), (0.7, 0.4983957219251337), (0.71, 0.5105614973262033), (0.72, 0.5227272727272727), (0.73, 0.5351604278074866), (0.74, 0.5475935828877005), (0.75, 0.5600267379679145), (0.76, 0.5727272727272728), (0.77, 0.5855614973262032), (0.78, 0.5983957219251337), (0.79, 0.6114973262032085), (0.8, 0.6245989304812835), (0.81, 0.638235294117647), (0.82, 0.652139037433155), (0.83, 0.6660427807, (0.83, 0.6660427807486631), (0.84, 0.6800802139037433), (0.85, 0.6942513368983957), (0.86, 0.7096256684491978), (0.87, 0.725), (0.88, 0.7405080213903743), (0.89, 0.7564171122994653), (0.9, 0.774331550802139), (0.91, 0.7926470588235294), (0.92, 0.811096256684492), (0.93, 0.8295454545454546), (0.94, 0.8501336898395722), (0.95, 0.871524064171123), (0.96, 0.8939839572192514), (0.97, 0.9172459893048128), (0.98, 0.9431818181818182), (0.99, 0.9712566844919787), (1.0, 1.0)]}
+---- Efficiency ----
+{'proposes': 19210, 'adopts': 7480, 'overall_acceptance': 0.389, 'top5_acceptance_songs': [(293, 0.8787878787878788), (377, 0.6956521739130435), (323, 0.6933333333333334), (257, 0.6774193548387096), (303, 0.6621621621621622)]}
+---- Cascades ----
+{'top5_cascades': [(290, 9, 1, 6, 1.333), (276, 8, 1, 5, 1.286), (385, 8, 1, 5, 1.286), (126, 8, 1, 5, 1.286), (118, 7, 1, 5, 1.444)], 'avg_depth': 0.98, 'avg_virality': 1.299}
+---- Reproduction ----
+{'R_mean': 0.663, 'R_median': 0}
+---- Exposure ----
+{'mean_exposures': 41.233, 'median_exposures': 41.0, 'p95': 79}

@@ -1,0 +1,8 @@
+experiments:
+  - name: "greedy_no_llm"
+    with_llm: false
+  - name: "agentic_llm"
+    with_llm: true
+  - name: "sequential_baseline"
+    with_llm: true
+    sequential: true

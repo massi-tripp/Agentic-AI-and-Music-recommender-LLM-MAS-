@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/data_loaders/spotify.py
+src/music_agents.egg-info/PKG-INFO
+src/music_agents.egg-info/SOURCES.txt
+src/music_agents.egg-info/dependency_links.txt
+src/music_agents.egg-info/requires.txt
+src/music_agents.egg-info/top_level.txt
+tests/test_protocol.py

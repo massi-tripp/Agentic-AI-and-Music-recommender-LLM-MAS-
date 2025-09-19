@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-agents"
+version = "0.1.0"
+description = "JamClub-Agentic: LLM agentic multi-agent music recommender"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2",
+  "numpy",
+  "pandas",
+  "networkx",
+  "matplotlib",
+  "pyyaml",
+  "requests",         # per chiamare Ollama dal policy_phi
+  # "orjson"          # lascia commentato: su Win/Py3.13 può mancare la wheel
+]
+
+[project.optional-dependencies]
+llm = ["litellm>=1.41.0"]     # se vuoi usare provider via LiteLLM
+dev = ["pytest", "pytest-asyncio", "ruff", "black"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

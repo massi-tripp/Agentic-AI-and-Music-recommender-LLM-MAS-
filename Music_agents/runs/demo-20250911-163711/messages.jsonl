@@ -1,0 +1,328 @@
+{"type": "RUN_START", "agents": 200, "songs": 400, "steps": 6000, "dt": 0.1, "lambda_base": 0.3, "llm_enabled": true}
+{"type": "DECISION", "agent": "97", "source": "llm", "song_id": 244, "targets": ["94"], "explain": "highly trusted user recommended this song", "step": 72}
+{"type": "PROPOSE", "sender": "97", "receiver": "94", "song_id": 244, "step": 72, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "DECISION", "agent": "123", "source": "llm", "song_id": 174, "targets": ["121", "120"], "explain": "high trust and low load candidates", "step": 103}
+{"type": "DECISION", "agent": "134", "source": "llm", "song_id": 198, "targets": ["135", "132"], "explain": "recommended song for user 198 based on their recent listens and neighbors' trust scores", "step": 132}
+{"type": "PROPOSE", "sender": "134", "receiver": "135", "song_id": 198, "step": 132, "source": "llm", "explain": "recommended song for user 198 based on their recent listens and neighbors' trust scores"}
+{"type": "PROPOSE", "sender": "134", "receiver": "132", "song_id": 198, "step": 132, "source": "llm", "explain": "recommended song for user 198 based on their recent listens and neighbors' trust scores"}
+{"type": "DECISION", "agent": "164", "source": "llm", "song_id": 83, "targets": ["192"], "explain": "", "step": 201}
+{"type": "PROPOSE", "sender": "164", "receiver": "192", "song_id": 83, "step": 201, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "0", "source": "llm", "song_id": 137, "targets": ["1"], "explain": "high trust and low load candidates", "step": 228}
+{"type": "PROPOSE", "sender": "0", "receiver": "1", "song_id": 137, "step": 228, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "167", "source": "llm", "song_id": 289, "targets": ["16", "88"], "explain": "", "step": 313}
+{"type": "PROPOSE", "sender": "167", "receiver": "16", "song_id": 289, "step": 313, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "167", "receiver": "88", "song_id": 289, "step": 313, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "15", "source": "llm", "song_id": 37, "targets": ["12", "18"], "explain": "recommended song for user 12 based on their recent listens and neighbors' trust scores", "step": 342}
+{"type": "PROPOSE", "sender": "15", "receiver": "12", "song_id": 37, "step": 342, "source": "llm", "explain": "recommended song for user 12 based on their recent listens and neighbors' trust scores"}
+{"type": "PROPOSE", "sender": "15", "receiver": "18", "song_id": 37, "step": 342, "source": "llm", "explain": "recommended song for user 12 based on their recent listens and neighbors' trust scores"}
+{"type": "DECISION", "agent": "64", "source": "llm", "song_id": 25, "targets": ["61", "79"], "explain": "high trust and low load candidates", "step": 403}
+{"type": "PROPOSE", "sender": "64", "receiver": "61", "song_id": 25, "step": 403, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "115", "source": "llm", "song_id": 227, "targets": ["111", "119"], "explain": "high trust and low load candidates selected", "step": 430}
+{"type": "PROPOSE", "sender": "115", "receiver": "111", "song_id": 227, "step": 430, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "PROPOSE", "sender": "115", "receiver": "119", "song_id": 227, "step": 430, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "132", "source": "llm", "song_id": 81, "targets": ["34", "130"], "explain": "high trust and low load candidates selected", "step": 474}
+{"type": "PROPOSE", "sender": "132", "receiver": "34", "song_id": 81, "step": 474, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "PROPOSE", "sender": "132", "receiver": "130", "song_id": 81, "step": 474, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "ADOPT", "receiver": "132", "sender": "134", "song_id": 198, "step": 474, "conv_id": "090e4646-a2fa-45bb-818c-b372b9108afd"}
+{"type": "DECISION", "agent": "141", "source": "llm", "song_id": 240, "targets": ["137", "145"], "explain": "short", "step": 499}
+{"type": "PROPOSE", "sender": "141", "receiver": "137", "song_id": 240, "step": 499, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "141", "receiver": "145", "song_id": 240, "step": 499, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "155", "source": "llm", "song_id": 126, "targets": ["152", "158"], "explain": "high trust and low load candidates selected", "step": 528}
+{"type": "PROPOSE", "sender": "155", "receiver": "152", "song_id": 126, "step": 528, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "159", "source": "llm", "song_id": 246, "targets": ["118"], "explain": "recommended song for user 103 and 118 based on their recent listens", "step": 570}
+{"type": "PROPOSE", "sender": "159", "receiver": "118", "song_id": 246, "step": 570, "source": "llm", "explain": "recommended song for user 103 and 118 based on their recent listens"}
+{"type": "DECISION", "agent": "169", "source": "llm", "song_id": 143, "targets": ["171", "166"], "explain": "short", "step": 595}
+{"type": "PROPOSE", "sender": "169", "receiver": "166", "song_id": 143, "step": 595, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "171", "source": "llm", "song_id": 0, "targets": ["172"], "explain": "highly recommended song", "step": 618}
+{"type": "DECISION", "agent": "17", "source": "llm", "song_id": 291, "targets": ["16"], "explain": "recommended song for user 276 based on their recent listens and neighbors' trust scores", "step": 650}
+{"type": "PROPOSE", "sender": "17", "receiver": "16", "song_id": 291, "step": 650, "source": "llm", "explain": "recommended song for user 276 based on their recent listens and neighbors' trust scores"}
+{"type": "DECISION", "agent": "42", "source": "llm", "song_id": 219, "targets": ["43"], "explain": "recommended song for user 41 and 43 based on their listening history", "step": 681}
+{"type": "PROPOSE", "sender": "42", "receiver": "43", "song_id": 219, "step": 681, "source": "llm", "explain": "recommended song for user 41 and 43 based on their listening history"}
+{"type": "DECISION", "agent": "71", "source": "llm", "song_id": 39, "targets": ["68", "67"], "explain": "high trust and low load candidates", "step": 718}
+{"type": "PROPOSE", "sender": "71", "receiver": "68", "song_id": 39, "step": 718, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "74", "source": "llm", "song_id": 63, "targets": ["197"], "explain": "short", "step": 740}
+{"type": "PROPOSE", "sender": "74", "receiver": "197", "song_id": 63, "step": 740, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "103", "source": "llm", "song_id": 188, "targets": ["101", "102"], "explain": "recommended song for user 100 with high load and low trust", "step": 768}
+{"type": "PROPOSE", "sender": "103", "receiver": "101", "song_id": 188, "step": 768, "source": "llm", "explain": "recommended song for user 100 with high load and low trust"}
+{"type": "DECISION", "agent": "180", "source": "llm", "song_id": 273, "targets": ["177", "183"], "explain": "", "step": 839}
+{"type": "PROPOSE", "sender": "180", "receiver": "177", "song_id": 273, "step": 839, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "180", "receiver": "183", "song_id": 273, "step": 839, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "22", "source": "llm", "song_id": 58, "targets": ["20", "19"], "explain": "", "step": 867}
+{"type": "PROPOSE", "sender": "22", "receiver": "20", "song_id": 58, "step": 867, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "22", "receiver": "19", "song_id": 58, "step": 867, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "44", "source": "llm", "song_id": 185, "targets": ["40"], "explain": "", "step": 895}
+{"type": "PROPOSE", "sender": "44", "receiver": "40", "song_id": 185, "step": 895, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "52", "source": "llm", "song_id": 239, "targets": ["5"], "explain": "short", "step": 920}
+{"type": "PROPOSE", "sender": "52", "receiver": "5", "song_id": 239, "step": 920, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "85", "source": "llm", "song_id": 379, "targets": ["81"], "explain": "", "step": 948}
+{"type": "PROPOSE", "sender": "85", "receiver": "81", "song_id": 379, "step": 948, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "86", "source": "llm", "song_id": 1, "targets": ["9", "90"], "explain": "short", "step": 971}
+{"type": "PROPOSE", "sender": "86", "receiver": "90", "song_id": 1, "step": 971, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "145", "source": "llm", "song_id": 19, "targets": ["142", "148"], "explain": "high load", "step": 999}
+{"type": "PROPOSE", "sender": "145", "receiver": "148", "song_id": 19, "step": 999, "source": "llm", "explain": "high load"}
+{"type": "ADOPT", "receiver": "145", "sender": "141", "song_id": 240, "step": 999, "conv_id": "21c4cb55-75c8-4ea3-ab5a-852b3ad76c7d"}
+{"type": "DECISION", "agent": "157", "source": "llm", "song_id": 284, "targets": ["156", "161"], "explain": "", "step": 1082}
+{"type": "PROPOSE", "sender": "157", "receiver": "156", "song_id": 284, "step": 1082, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "157", "receiver": "161", "song_id": 284, "step": 1082, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "2", "source": "llm", "song_id": 385, "targets": ["35", "30"], "explain": "high trust and low load candidates", "step": 1153}
+{"type": "PROPOSE", "sender": "2", "receiver": "35", "song_id": 385, "step": 1153, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "PROPOSE", "sender": "2", "receiver": "30", "song_id": 385, "step": 1153, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "3", "source": "llm", "song_id": 14, "targets": ["199", "107"], "explain": "short", "step": 1176}
+{"type": "PROPOSE", "sender": "3", "receiver": "107", "song_id": 14, "step": 1176, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "88", "source": "llm", "song_id": 175, "targets": ["84", "92"], "explain": "high trust and low load candidates", "step": 1203}
+{"type": "PROPOSE", "sender": "88", "receiver": "84", "song_id": 175, "step": 1203, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "PROPOSE", "sender": "88", "receiver": "92", "song_id": 175, "step": 1203, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "99", "source": "llm", "song_id": 311, "targets": ["101"], "explain": "high trust and low load candidates", "step": 1247}
+{"type": "PROPOSE", "sender": "99", "receiver": "101", "song_id": 311, "step": 1247, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "112", "source": "llm", "song_id": 182, "targets": ["110", "114"], "explain": "recommended song for user 110 and 114 based on their recent listens", "step": 1298}
+{"type": "PROPOSE", "sender": "112", "receiver": "110", "song_id": 182, "step": 1298, "source": "llm", "explain": "recommended song for user 110 and 114 based on their recent listens"}
+{"type": "PROPOSE", "sender": "112", "receiver": "114", "song_id": 182, "step": 1298, "source": "llm", "explain": "recommended song for user 110 and 114 based on their recent listens"}
+{"type": "DECISION", "agent": "117", "source": "llm", "song_id": 372, "targets": ["114", "120"], "explain": "high load", "step": 1328}
+{"type": "PROPOSE", "sender": "117", "receiver": "114", "song_id": 372, "step": 1328, "source": "llm", "explain": "high load"}
+{"type": "PROPOSE", "sender": "117", "receiver": "120", "song_id": 372, "step": 1328, "source": "llm", "explain": "high load"}
+{"type": "DECISION", "agent": "168", "source": "llm", "song_id": 134, "targets": ["171", "164"], "explain": "recommended song for user 171 with mode COMP and action SHARE", "step": 1361}
+{"type": "PROPOSE", "sender": "168", "receiver": "171", "song_id": 134, "step": 1361, "source": "llm", "explain": "recommended song for user 171 with mode COMP and action SHARE"}
+{"type": "PROPOSE", "sender": "168", "receiver": "164", "song_id": 134, "step": 1361, "source": "llm", "explain": "recommended song for user 171 with mode COMP and action SHARE"}
+{"type": "DECISION", "agent": "92", "source": "llm", "song_id": 266, "targets": ["95", "88"], "explain": "", "step": 1447}
+{"type": "PROPOSE", "sender": "92", "receiver": "95", "song_id": 266, "step": 1447, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "92", "receiver": "88", "song_id": 266, "step": 1447, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "92", "sender": "88", "song_id": 175, "step": 1447, "conv_id": "69ea2783-5c30-44d0-8c8d-80dc5ee83e73"}
+{"type": "DECISION", "agent": "98", "source": "llm", "song_id": 122, "targets": ["101"], "explain": "high trust and low load candidates selected", "step": 1489}
+{"type": "PROPOSE", "sender": "98", "receiver": "101", "song_id": 122, "step": 1489, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "158", "source": "llm", "song_id": 228, "targets": ["159"], "explain": "short", "step": 1513}
+{"type": "PROPOSE", "sender": "158", "receiver": "159", "song_id": 228, "step": 1513, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "197", "source": "llm", "song_id": 361, "targets": ["195", "194"], "explain": "highly trusted user recommended this song", "step": 1544}
+{"type": "PROPOSE", "sender": "197", "receiver": "195", "song_id": 361, "step": 1544, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "PROPOSE", "sender": "197", "receiver": "194", "song_id": 361, "step": 1544, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "DECISION", "agent": "54", "source": "llm", "song_id": 142, "targets": ["199"], "explain": "high trust and low load candidates selected", "step": 1572}
+{"type": "PROPOSE", "sender": "54", "receiver": "199", "song_id": 142, "step": 1572, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "62", "source": "llm", "song_id": 370, "targets": ["63", "60"], "explain": "recommended song for user 1 with id 1 based on their recent listens and neighbors' trust scores", "step": 1603}
+{"type": "PROPOSE", "sender": "62", "receiver": "63", "song_id": 370, "step": 1603, "source": "llm", "explain": "recommended song for user 1 with id 1 based on their recent listens and neighbors' trust scores"}
+{"type": "PROPOSE", "sender": "62", "receiver": "60", "song_id": 370, "step": 1603, "source": "llm", "explain": "recommended song for user 1 with id 1 based on their recent listens and neighbors' trust scores"}
+{"type": "DECISION", "agent": "122", "source": "llm", "song_id": 310, "targets": ["121", "124"], "explain": "high trust and low load candidates selected", "step": 1629}
+{"type": "PROPOSE", "sender": "122", "receiver": "121", "song_id": 310, "step": 1629, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "PROPOSE", "sender": "122", "receiver": "124", "song_id": 310, "step": 1629, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "143", "source": "llm", "song_id": 1, "targets": ["140", "147"], "explain": "short", "step": 1672}
+{"type": "PROPOSE", "sender": "143", "receiver": "140", "song_id": 1, "step": 1672, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "143", "receiver": "147", "song_id": 1, "step": 1672, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "1", "source": "llm", "song_id": 121, "targets": ["197"], "explain": "highly recommended song", "step": 1696}
+{"type": "PROPOSE", "sender": "1", "receiver": "197", "song_id": 121, "step": 1696, "source": "llm", "explain": "highly recommended song"}
+{"type": "ADOPT", "receiver": "1", "sender": "0", "song_id": 137, "step": 1696, "conv_id": "cab09f54-2de1-4125-b393-e7a0d1740fb1"}
+{"type": "DECISION", "agent": "5", "source": "llm", "song_id": 115, "targets": ["52"], "explain": "short", "step": 1724}
+{"type": "PROPOSE", "sender": "5", "receiver": "52", "song_id": 115, "step": 1724, "source": "llm", "explain": "short"}
+{"type": "ADOPT", "receiver": "5", "sender": "52", "song_id": 239, "step": 1724, "conv_id": "a92192f6-86b1-4864-b325-4ff388141c48"}
+{"type": "DECISION", "agent": "53", "source": "llm", "song_id": 274, "targets": ["52"], "explain": "", "step": 1829}
+{"type": "PROPOSE", "sender": "53", "receiver": "52", "song_id": 274, "step": 1829, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "83", "source": "llm", "song_id": 340, "targets": ["84", "81"], "explain": "", "step": 1905}
+{"type": "PROPOSE", "sender": "83", "receiver": "84", "song_id": 340, "step": 1905, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "83", "receiver": "81", "song_id": 340, "step": 1905, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "90", "source": "llm", "song_id": 359, "targets": ["192", "94"], "explain": "highly recommended song", "step": 1942}
+{"type": "PROPOSE", "sender": "90", "receiver": "94", "song_id": 359, "step": 1942, "source": "llm", "explain": "highly recommended song"}
+{"type": "ADOPT", "receiver": "90", "sender": "86", "song_id": 1, "step": 1942, "conv_id": "d523a9b8-b251-48f3-ae37-33915d17980e"}
+{"type": "DECISION", "agent": "110", "source": "llm", "song_id": 189, "targets": ["92", "106"], "explain": "highly trusted user recommended this song", "step": 1971}
+{"type": "PROPOSE", "sender": "110", "receiver": "106", "song_id": 189, "step": 1971, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "DECISION", "agent": "128", "source": "llm", "song_id": 57, "targets": ["127"], "explain": "high trust and low load candidates", "step": 2000}
+{"type": "PROPOSE", "sender": "128", "receiver": "127", "song_id": 57, "step": 2000, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "183", "source": "llm", "song_id": 48, "targets": ["180", "187"], "explain": "high trust and low load candidates", "step": 2066}
+{"type": "PROPOSE", "sender": "183", "receiver": "180", "song_id": 48, "step": 2066, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "PROPOSE", "sender": "183", "receiver": "187", "song_id": 48, "step": 2066, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "ADOPT", "receiver": "183", "sender": "180", "song_id": 273, "step": 2066, "conv_id": "bd284f24-5820-45bf-bf8c-f162a4885bdc"}
+{"type": "DECISION", "agent": "82", "source": "llm", "song_id": 193, "targets": ["141"], "explain": "high trust and low load candidates selected", "step": 2093}
+{"type": "DECISION", "agent": "131", "source": "llm", "song_id": 25, "targets": ["135"], "explain": "high trust and low load candidates", "step": 2117}
+{"type": "PROPOSE", "sender": "131", "receiver": "135", "song_id": 25, "step": 2117, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "195", "source": "llm", "song_id": 257, "targets": ["20", "192"], "explain": "highly trusted user recommended this song", "step": 2147}
+{"type": "PROPOSE", "sender": "195", "receiver": "20", "song_id": 257, "step": 2147, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "PROPOSE", "sender": "195", "receiver": "192", "song_id": 257, "step": 2147, "source": "llm", "explain": "highly trusted user recommended this song"}
+{"type": "DECISION", "agent": "31", "source": "llm", "song_id": 103, "targets": ["30"], "explain": "high trust and low load candidates selected", "step": 2176}
+{"type": "PROPOSE", "sender": "31", "receiver": "30", "song_id": 103, "step": 2176, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "139", "source": "llm", "song_id": 82, "targets": ["181", "27"], "explain": "recommended by user 181 and 27", "step": 2215}
+{"type": "PROPOSE", "sender": "139", "receiver": "181", "song_id": 82, "step": 2215, "source": "llm", "explain": "recommended by user 181 and 27"}
+{"type": "PROPOSE", "sender": "139", "receiver": "27", "song_id": 82, "step": 2215, "source": "llm", "explain": "recommended by user 181 and 27"}
+{"type": "DECISION", "agent": "35", "source": "llm", "song_id": 365, "targets": ["66"], "explain": "short", "step": 2241}
+{"type": "DECISION", "agent": "142", "source": "llm", "song_id": 257, "targets": ["139"], "explain": "high trust and low load candidates", "step": 2265}
+{"type": "PROPOSE", "sender": "142", "receiver": "139", "song_id": 257, "step": 2265, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "196", "source": "llm", "song_id": 15, "targets": ["195", "197"], "explain": "short", "step": 2288}
+{"type": "PROPOSE", "sender": "196", "receiver": "197", "song_id": 15, "step": 2288, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "47", "source": "llm", "song_id": 71, "targets": ["162", "199"], "explain": "high trust and low load candidates", "step": 2316}
+{"type": "PROPOSE", "sender": "47", "receiver": "162", "song_id": 71, "step": 2316, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "PROPOSE", "sender": "47", "receiver": "199", "song_id": 71, "step": 2316, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "81", "source": "llm", "song_id": 83, "targets": ["80", "82"], "explain": "", "step": 2393}
+{"type": "PROPOSE", "sender": "81", "receiver": "80", "song_id": 83, "step": 2393, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "81", "receiver": "82", "song_id": 83, "step": 2393, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "81", "sender": "85", "song_id": 379, "step": 2393, "conv_id": "e278d29d-9d85-454a-9dc0-1ef37f1211bd"}
+{"type": "ADOPT", "receiver": "81", "sender": "83", "song_id": 340, "step": 2393, "conv_id": "65ad8ea8-c944-4b9a-b950-cf7d1550a562"}
+{"type": "DECISION", "agent": "113", "source": "llm", "song_id": 1, "targets": ["111", "115"], "explain": "", "step": 2475}
+{"type": "PROPOSE", "sender": "113", "receiver": "111", "song_id": 1, "step": 2475, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "140", "source": "llm", "song_id": 223, "targets": ["137", "143"], "explain": "high trust and low load candidates", "step": 2504}
+{"type": "PROPOSE", "sender": "140", "receiver": "137", "song_id": 223, "step": 2504, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "ADOPT", "receiver": "140", "sender": "143", "song_id": 1, "step": 2504, "conv_id": "7f7ad32b-b9fa-46ef-9e30-87fae202f11a"}
+{"type": "DECISION", "agent": "18", "source": "llm", "song_id": 323, "targets": ["17", "16"], "explain": "recommended song for user 17 and 16 based on their listening history", "step": 2536}
+{"type": "PROPOSE", "sender": "18", "receiver": "17", "song_id": 323, "step": 2536, "source": "llm", "explain": "recommended song for user 17 and 16 based on their listening history"}
+{"type": "PROPOSE", "sender": "18", "receiver": "16", "song_id": 323, "step": 2536, "source": "llm", "explain": "recommended song for user 17 and 16 based on their listening history"}
+{"type": "ADOPT", "receiver": "18", "sender": "15", "song_id": 37, "step": 2536, "conv_id": "dc3e4eaa-7f9f-45e4-a65f-9f210e85202c"}
+{"type": "DECISION", "agent": "32", "source": "llm", "song_id": 139, "targets": ["61"], "explain": "", "step": 2649}
+{"type": "PROPOSE", "sender": "32", "receiver": "61", "song_id": 139, "step": 2649, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "91", "source": "llm", "song_id": 284, "targets": ["22", "94"], "explain": "short", "step": 2692}
+{"type": "PROPOSE", "sender": "91", "receiver": "22", "song_id": 284, "step": 2692, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "91", "receiver": "94", "song_id": 284, "step": 2692, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "95", "source": "llm", "song_id": 303, "targets": ["92"], "explain": "short", "step": 2733}
+{"type": "PROPOSE", "sender": "95", "receiver": "92", "song_id": 303, "step": 2733, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "188", "source": "llm", "song_id": 73, "targets": ["187", "186"], "explain": "", "step": 2768}
+{"type": "PROPOSE", "sender": "188", "receiver": "187", "song_id": 73, "step": 2768, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "188", "receiver": "186", "song_id": 73, "step": 2768, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "10", "source": "llm", "song_id": 284, "targets": ["11"], "explain": "", "step": 2839}
+{"type": "PROPOSE", "sender": "10", "receiver": "11", "song_id": 284, "step": 2839, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "61", "source": "llm", "song_id": 275, "targets": ["32", "118"], "explain": "short", "step": 2871}
+{"type": "PROPOSE", "sender": "61", "receiver": "32", "song_id": 275, "step": 2871, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "61", "receiver": "118", "song_id": 275, "step": 2871, "source": "llm", "explain": "short"}
+{"type": "ADOPT", "receiver": "61", "sender": "64", "song_id": 25, "step": 2871, "conv_id": "d0e82161-706e-497f-97e4-e86b5443a5d8"}
+{"type": "ADOPT", "receiver": "61", "sender": "32", "song_id": 139, "step": 2871, "conv_id": "f44af57b-ea12-405e-a212-4fc3abd34a18"}
+{"type": "DECISION", "agent": "76", "source": "llm", "song_id": 288, "targets": ["126", "123"], "explain": "", "step": 2973}
+{"type": "PROPOSE", "sender": "76", "receiver": "126", "song_id": 288, "step": 2973, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "76", "receiver": "123", "song_id": 288, "step": 2973, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "124", "source": "llm", "song_id": 328, "targets": ["121", "127"], "explain": "short", "step": 3057}
+{"type": "PROPOSE", "sender": "124", "receiver": "121", "song_id": 328, "step": 3057, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "124", "receiver": "127", "song_id": 328, "step": 3057, "source": "llm", "explain": "short"}
+{"type": "ADOPT", "receiver": "124", "sender": "122", "song_id": 310, "step": 3057, "conv_id": "0f778634-23ba-4644-a858-451fa7a8efa4"}
+{"type": "DECISION", "agent": "56", "source": "llm", "song_id": 196, "targets": ["126"], "explain": "high trust and low load candidates selected", "step": 3087}
+{"type": "PROPOSE", "sender": "56", "receiver": "126", "song_id": 196, "step": 3087, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "75", "source": "llm", "song_id": 196, "targets": ["74", "76"], "explain": "high trust and low load candidates selected", "step": 3118}
+{"type": "PROPOSE", "sender": "75", "receiver": "74", "song_id": 196, "step": 3118, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "106", "source": "llm", "song_id": 303, "targets": ["110", "102"], "explain": "highly recommended song", "step": 3145}
+{"type": "ADOPT", "receiver": "106", "sender": "110", "song_id": 189, "step": 3145, "conv_id": "8bb8e0a2-fee7-42d5-8bec-a07af6fddbb2"}
+{"type": "DECISION", "agent": "149", "source": "llm", "song_id": 171, "targets": ["151"], "explain": "", "step": 3289}
+{"type": "PROPOSE", "sender": "149", "receiver": "151", "song_id": 171, "step": 3289, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "43", "source": "llm", "song_id": 126, "targets": ["41"], "explain": "high trust and low load candidates", "step": 3325}
+{"type": "PROPOSE", "sender": "43", "receiver": "41", "song_id": 126, "step": 3325, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "ADOPT", "receiver": "43", "sender": "42", "song_id": 219, "step": 3325, "conv_id": "8a971a60-64c7-4078-9eef-b7c56ff68e4c"}
+{"type": "DECISION", "agent": "114", "source": "llm", "song_id": 305, "targets": ["110"], "explain": "recommended song for user 110 based on neighbors with highest trust and load", "step": 3366}
+{"type": "PROPOSE", "sender": "114", "receiver": "110", "song_id": 305, "step": 3366, "source": "llm", "explain": "recommended song for user 110 based on neighbors with highest trust and load"}
+{"type": "ADOPT", "receiver": "114", "sender": "117", "song_id": 372, "step": 3366, "conv_id": "2dc3d205-6037-4a06-87c7-be2fd0d69117"}
+{"type": "DECISION", "agent": "163", "source": "llm", "song_id": 166, "targets": ["166"], "explain": "", "step": 3401}
+{"type": "PROPOSE", "sender": "163", "receiver": "166", "song_id": 166, "step": 3401, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "9", "source": "llm", "song_id": 181, "targets": ["7"], "explain": "", "step": 3484}
+{"type": "PROPOSE", "sender": "9", "receiver": "7", "song_id": 181, "step": 3484, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "25", "source": "llm", "song_id": 26, "targets": ["24", "27"], "explain": "", "step": 3605}
+{"type": "PROPOSE", "sender": "25", "receiver": "24", "song_id": 26, "step": 3605, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "25", "receiver": "27", "song_id": 26, "step": 3605, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "84", "source": "llm", "song_id": 224, "targets": ["83", "85"], "explain": "", "step": 3689}
+{"type": "PROPOSE", "sender": "84", "receiver": "83", "song_id": 224, "step": 3689, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "84", "receiver": "85", "song_id": 224, "step": 3689, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "84", "sender": "88", "song_id": 175, "step": 3689, "conv_id": "397ee894-68ea-4fc2-8305-e68ee25ceaa5"}
+{"type": "ADOPT", "receiver": "84", "sender": "83", "song_id": 340, "step": 3689, "conv_id": "ca43926f-6dba-47b4-9103-4b9b2695e795"}
+{"type": "DECISION", "agent": "96", "source": "llm", "song_id": 41, "targets": ["95", "98"], "explain": "", "step": 3798}
+{"type": "PROPOSE", "sender": "96", "receiver": "95", "song_id": 41, "step": 3798, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "96", "receiver": "98", "song_id": 41, "step": 3798, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "187", "source": "llm", "song_id": 234, "targets": ["185", "189"], "explain": "short", "step": 3827}
+{"type": "PROPOSE", "sender": "187", "receiver": "185", "song_id": 234, "step": 3827, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "187", "receiver": "189", "song_id": 234, "step": 3827, "source": "llm", "explain": "short"}
+{"type": "ADOPT", "receiver": "187", "sender": "183", "song_id": 48, "step": 3827, "conv_id": "062c86c8-8bce-4ead-b090-883c974c1092"}
+{"type": "DECISION", "agent": "192", "source": "llm", "song_id": 128, "targets": ["188"], "explain": "high trust and low load candidates selected", "step": 3866}
+{"type": "PROPOSE", "sender": "192", "receiver": "188", "song_id": 128, "step": 3866, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "ADOPT", "receiver": "192", "sender": "164", "song_id": 83, "step": 3866, "conv_id": "a1d2f53c-6ac6-4a90-8125-0443f3d98f48"}
+{"type": "ADOPT", "receiver": "192", "sender": "195", "song_id": 257, "step": 3866, "conv_id": "e374b216-44f6-4e7c-8591-cb7027d05063"}
+{"type": "DECISION", "agent": "33", "source": "llm", "song_id": 237, "targets": ["32", "34"], "explain": "short", "step": 3893}
+{"type": "PROPOSE", "sender": "33", "receiver": "32", "song_id": 237, "step": 3893, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "33", "receiver": "34", "song_id": 237, "step": 3893, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "41", "source": "llm", "song_id": 196, "targets": ["40", "44"], "explain": "", "step": 3958}
+{"type": "PROPOSE", "sender": "41", "receiver": "40", "song_id": 196, "step": 3958, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "41", "receiver": "44", "song_id": 196, "step": 3958, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "28", "source": "llm", "song_id": 68, "targets": ["26", "32"], "explain": "high trust and low load candidates selected", "step": 3998}
+{"type": "DECISION", "agent": "30", "source": "llm", "song_id": 351, "targets": ["34"], "explain": "short", "step": 4031}
+{"type": "PROPOSE", "sender": "30", "receiver": "34", "song_id": 351, "step": 4031, "source": "llm", "explain": "short"}
+{"type": "ADOPT", "receiver": "30", "sender": "2", "song_id": 385, "step": 4031, "conv_id": "c41debc0-fd8b-4ccc-bddc-baebaa6568ec"}
+{"type": "ADOPT", "receiver": "30", "sender": "31", "song_id": 103, "step": 4031, "conv_id": "e58e0d41-33be-4161-9fe4-271cf836f2d0"}
+{"type": "DECISION", "agent": "40", "source": "llm", "song_id": 42, "targets": ["39", "42"], "explain": "", "step": 4165}
+{"type": "PROPOSE", "sender": "40", "receiver": "39", "song_id": 42, "step": 4165, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "40", "receiver": "42", "song_id": 42, "step": 4165, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "40", "sender": "44", "song_id": 185, "step": 4165, "conv_id": "ea79f350-8974-4cd3-bc88-fb611747785d"}
+{"type": "DECISION", "agent": "126", "source": "llm", "song_id": 233, "targets": ["125"], "explain": "high trust and low load candidates", "step": 4207}
+{"type": "PROPOSE", "sender": "126", "receiver": "125", "song_id": 233, "step": 4207, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "ADOPT", "receiver": "126", "sender": "76", "song_id": 288, "step": 4207, "conv_id": "68170b1a-8830-4060-9aba-b8d8209a1691"}
+{"type": "ADOPT", "receiver": "126", "sender": "56", "song_id": 196, "step": 4207, "conv_id": "6d5ae5d9-b806-47a8-99b1-02f33b461309"}
+{"type": "DECISION", "agent": "45", "source": "llm", "song_id": 220, "targets": ["49"], "explain": "short", "step": 4232}
+{"type": "PROPOSE", "sender": "45", "receiver": "49", "song_id": 220, "step": 4232, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "77", "source": "llm", "song_id": 178, "targets": ["79"], "explain": "", "step": 4313}
+{"type": "PROPOSE", "sender": "77", "receiver": "79", "song_id": 178, "step": 4313, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "118", "source": "llm", "song_id": 39, "targets": ["50", "110"], "explain": "", "step": 4347}
+{"type": "PROPOSE", "sender": "118", "receiver": "50", "song_id": 39, "step": 4347, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "118", "receiver": "110", "song_id": 39, "step": 4347, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "118", "sender": "159", "song_id": 246, "step": 4347, "conv_id": "ffcc1511-ba3e-494d-9f6e-54c0965d2cee"}
+{"type": "DECISION", "agent": "125", "source": "llm", "song_id": 304, "targets": ["120", "128"], "explain": "high load", "step": 4373}
+{"type": "PROPOSE", "sender": "125", "receiver": "120", "song_id": 304, "step": 4373, "source": "llm", "explain": "high load"}
+{"type": "PROPOSE", "sender": "125", "receiver": "128", "song_id": 304, "step": 4373, "source": "llm", "explain": "high load"}
+{"type": "ADOPT", "receiver": "125", "sender": "126", "song_id": 233, "step": 4373, "conv_id": "b2e76b95-62d1-45ab-8b8f-ce35d4752af9"}
+{"type": "DECISION", "agent": "48", "source": "llm", "song_id": 197, "targets": ["162", "193"], "explain": "short", "step": 4423}
+{"type": "PROPOSE", "sender": "48", "receiver": "162", "song_id": 197, "step": 4423, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "147", "source": "llm", "song_id": 126, "targets": ["151"], "explain": "high trust and low load candidates selected", "step": 4454}
+{"type": "PROPOSE", "sender": "147", "receiver": "151", "song_id": 126, "step": 4454, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "ADOPT", "receiver": "147", "sender": "143", "song_id": 1, "step": 4454, "conv_id": "4aecdf63-536f-4fb0-908f-71418c8a731c"}
+{"type": "DECISION", "agent": "100", "source": "llm", "song_id": 323, "targets": ["101", "103"], "explain": "short", "step": 4482}
+{"type": "PROPOSE", "sender": "100", "receiver": "101", "song_id": 323, "step": 4482, "source": "llm", "explain": "short"}
+{"type": "PROPOSE", "sender": "100", "receiver": "103", "song_id": 323, "step": 4482, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "184", "source": "llm", "song_id": 56, "targets": ["181", "187"], "explain": "high trust and low load candidates", "step": 4513}
+{"type": "PROPOSE", "sender": "184", "receiver": "181", "song_id": 56, "step": 4513, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "PROPOSE", "sender": "184", "receiver": "187", "song_id": 56, "step": 4513, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "189", "source": "llm", "song_id": 50, "targets": ["187", "186"], "explain": "short", "step": 4574}
+{"type": "PROPOSE", "sender": "189", "receiver": "186", "song_id": 50, "step": 4574, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "89", "source": "llm", "song_id": 90, "targets": ["88"], "explain": "", "step": 4605}
+{"type": "DECISION", "agent": "136", "source": "llm", "song_id": 329, "targets": ["137", "134"], "explain": "recommended song for user 1 based on user 2's recent listens and trust level", "step": 4653}
+{"type": "PROPOSE", "sender": "136", "receiver": "137", "song_id": 329, "step": 4653, "source": "llm", "explain": "recommended song for user 1 based on user 2's recent listens and trust level"}
+{"type": "PROPOSE", "sender": "136", "receiver": "134", "song_id": 329, "step": 4653, "source": "llm", "explain": "recommended song for user 1 based on user 2's recent listens and trust level"}
+{"type": "DECISION", "agent": "161", "source": "llm", "song_id": 14, "targets": ["157", "163"], "explain": "short", "step": 4684}
+{"type": "PROPOSE", "sender": "161", "receiver": "157", "song_id": 14, "step": 4684, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "12", "source": "llm", "song_id": 291, "targets": ["9"], "explain": "", "step": 4791}
+{"type": "PROPOSE", "sender": "12", "receiver": "9", "song_id": 291, "step": 4791, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "12", "sender": "15", "song_id": 37, "step": 4791, "conv_id": "66dbb5c4-1e6c-4bcc-8fa2-ba2e673ce131"}
+{"type": "DECISION", "agent": "57", "source": "llm", "song_id": 392, "targets": ["53"], "explain": "high trust and low load candidates", "step": 4863}
+{"type": "PROPOSE", "sender": "57", "receiver": "53", "song_id": 392, "step": 4863, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "137", "source": "llm", "song_id": 350, "targets": ["133"], "explain": "", "step": 4944}
+{"type": "PROPOSE", "sender": "137", "receiver": "133", "song_id": 350, "step": 4944, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "137", "sender": "141", "song_id": 240, "step": 4944, "conv_id": "7311ecf4-1cd1-4300-8247-6d5b2de370a1"}
+{"type": "DECISION", "agent": "177", "source": "llm", "song_id": 273, "targets": ["173", "181"], "explain": "high trust and low load candidates selected", "step": 4990}
+{"type": "PROPOSE", "sender": "177", "receiver": "173", "song_id": 273, "step": 4990, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "PROPOSE", "sender": "177", "receiver": "181", "song_id": 273, "step": 4990, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "ADOPT", "receiver": "177", "sender": "180", "song_id": 273, "step": 4990, "conv_id": "a1cb4c55-a437-42f3-8c32-3940bef19743"}
+{"type": "DECISION", "agent": "130", "source": "llm", "song_id": 233, "targets": ["127", "198"], "explain": "", "step": 5066}
+{"type": "PROPOSE", "sender": "130", "receiver": "198", "song_id": 233, "step": 5066, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "130", "sender": "132", "song_id": 81, "step": 5066, "conv_id": "d379f313-bc2e-4033-93df-e8913870aaf4"}
+{"type": "DECISION", "agent": "58", "source": "llm", "song_id": 323, "targets": ["57"], "explain": "", "step": 5177}
+{"type": "PROPOSE", "sender": "58", "receiver": "57", "song_id": 323, "step": 5177, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "198", "source": "llm", "song_id": 233, "targets": ["194"], "explain": "high load", "step": 5204}
+{"type": "PROPOSE", "sender": "198", "receiver": "194", "song_id": 233, "step": 5204, "source": "llm", "explain": "high load"}
+{"type": "ADOPT", "receiver": "198", "sender": "130", "song_id": 233, "step": 5204, "conv_id": "0515db3e-a6e1-44e3-b2f5-e2635d545f3c"}
+{"type": "DECISION", "agent": "121", "source": "llm", "song_id": 117, "targets": ["150", "154"], "explain": "", "step": 5327}
+{"type": "PROPOSE", "sender": "121", "receiver": "154", "song_id": 117, "step": 5327, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "121", "sender": "122", "song_id": 310, "step": 5327, "conv_id": "e4257a73-c22a-497f-be05-03436ebfb77d"}
+{"type": "ADOPT", "receiver": "121", "sender": "124", "song_id": 328, "step": 5327, "conv_id": "00e1484b-34c0-4185-8b6c-3dd6ec9991c6"}
+{"type": "DECISION", "agent": "172", "source": "llm", "song_id": 363, "targets": ["176"], "explain": "short", "step": 5356}
+{"type": "PROPOSE", "sender": "172", "receiver": "176", "song_id": 363, "step": 5356, "source": "llm", "explain": "short"}
+{"type": "DECISION", "agent": "108", "source": "llm", "song_id": 386, "targets": ["110"], "explain": "", "step": 5401}
+{"type": "PROPOSE", "sender": "108", "receiver": "110", "song_id": 386, "step": 5401, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "178", "source": "llm", "song_id": 240, "targets": ["175", "181"], "explain": "high trust and low load candidates selected", "step": 5435}
+{"type": "PROPOSE", "sender": "178", "receiver": "175", "song_id": 240, "step": 5435, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "PROPOSE", "sender": "178", "receiver": "181", "song_id": 240, "step": 5435, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "34", "source": "llm", "song_id": 202, "targets": ["118"], "explain": "short", "step": 5468}
+{"type": "ADOPT", "receiver": "34", "sender": "132", "song_id": 81, "step": 5468, "conv_id": "515b0929-d70b-43d2-be6a-72869430eb5c"}
+{"type": "DECISION", "agent": "69", "source": "llm", "song_id": 350, "targets": ["73"], "explain": "high trust and low load candidates", "step": 5500}
+{"type": "PROPOSE", "sender": "69", "receiver": "73", "song_id": 350, "step": 5500, "source": "llm", "explain": "high trust and low load candidates"}
+{"type": "DECISION", "agent": "19", "source": "llm", "song_id": 276, "targets": ["20", "23"], "explain": "high trust and low load candidates selected", "step": 5532}
+{"type": "PROPOSE", "sender": "19", "receiver": "20", "song_id": 276, "step": 5532, "source": "llm", "explain": "high trust and low load candidates selected"}
+{"type": "DECISION", "agent": "51", "source": "llm", "song_id": 130, "targets": ["52", "49"], "explain": "recommended song for user 1 with high trust and low load", "step": 5574}
+{"type": "PROPOSE", "sender": "51", "receiver": "52", "song_id": 130, "step": 5574, "source": "llm", "explain": "recommended song for user 1 with high trust and low load"}
+{"type": "PROPOSE", "sender": "51", "receiver": "49", "song_id": 130, "step": 5574, "source": "llm", "explain": "recommended song for user 1 with high trust and low load"}
+{"type": "DECISION", "agent": "55", "source": "llm", "song_id": 326, "targets": ["19", "53"], "explain": "", "step": 5669}
+{"type": "PROPOSE", "sender": "55", "receiver": "19", "song_id": 326, "step": 5669, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "55", "receiver": "53", "song_id": 326, "step": 5669, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "59", "source": "llm", "song_id": 170, "targets": ["57"], "explain": "", "step": 5737}
+{"type": "PROPOSE", "sender": "59", "receiver": "57", "song_id": 170, "step": 5737, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "70", "source": "llm", "song_id": 86, "targets": ["71"], "explain": "", "step": 5764}
+{"type": "PROPOSE", "sender": "70", "receiver": "71", "song_id": 86, "step": 5764, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "190", "source": "llm", "song_id": 209, "targets": ["194"], "explain": "", "step": 5790}
+{"type": "PROPOSE", "sender": "190", "receiver": "194", "song_id": 209, "step": 5790, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "199", "source": "llm", "song_id": 103, "targets": ["195"], "explain": "", "step": 5861}
+{"type": "PROPOSE", "sender": "199", "receiver": "195", "song_id": 103, "step": 5861, "source": "llm", "explain": ""}
+{"type": "DECISION", "agent": "175", "source": "llm", "song_id": 356, "targets": ["124", "139"], "explain": "", "step": 5987}
+{"type": "PROPOSE", "sender": "175", "receiver": "124", "song_id": 356, "step": 5987, "source": "llm", "explain": ""}
+{"type": "PROPOSE", "sender": "175", "receiver": "139", "song_id": 356, "step": 5987, "source": "llm", "explain": ""}
+{"type": "ADOPT", "receiver": "175", "sender": "178", "song_id": 240, "step": 5987, "conv_id": "1fac66fa-eef8-4aee-a17b-4d1a157c7ca9"}
