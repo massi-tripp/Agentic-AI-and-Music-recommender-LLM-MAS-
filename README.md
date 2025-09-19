@@ -1,4 +1,7 @@
 # Agentic-AI-and-Music-recommender-LLM-MAS-
+
+Course: Sistemi Complessi:Modelli e simulazione - Università degli studi Milano-Bicocca
+
 This project implements a multi-agent system (MAS) for the diffusion and recommendation of music tracks. Each agent represents a user with a personalized taste profile (e.g., energy, danceability, valence, acousticness, tempo) and interacts asynchronously within a small-world social graph. Agents share songs, evaluate proposals, and adopt tracks under attention budget constraints, generating diffusion cascades and possible viral trends.
 
 The design strictly follows the principles of classical MAS rather than building an LLM-centric orchestration. Key features include:
@@ -21,9 +24,9 @@ The LLM is used in-the-loop as a service, not as the system’s core state. It s
 
 We evaluate two scenarios (with and without LLM) across different network sizes. Results show a trade-off:
 
-LLM runs achieve higher fairness and lower exposure before adoption but at the cost of significantly lower throughput due to latency and conservative gating.
+- LLM runs achieve higher fairness and lower exposure before adoption but at the cost of significantly lower throughput due to latency and conservative gating.
 
-Non-LLM runs generate larger cascades and higher volume, but also more inequality in adoption distribution.
+- Non-LLM runs generate larger cascades and higher volume, but also more inequality in adoption distribution.
 
 This project demonstrates how to design a MAS that respects theoretical constraints from Agentic AI literature (authentic sociality, structured states, true asynchrony, reproducible metrics), offering a methodologically sound foundation for future extensions such as adaptive policies (bandits/RL), richer network topologies, and stress-test scenarios.
 
